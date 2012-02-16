@@ -9,7 +9,7 @@
   <url>http://headsupdev.org/headsupdev-parent</url>
 
   <scm>
-    <connection>scm:git:git@github.com:headsupdev/headsupdev-parent.git
+    <connection>scm:git:git://github.com/headsupdev/headsupdev-parent.git</connection>
     <developerConnection>scm:git:git@github.com:headsupdev/headsupdev-parent.git</developerConnection>
     <url>http://headsupdev.org/headsupdev-parent</url>
   </scm>
