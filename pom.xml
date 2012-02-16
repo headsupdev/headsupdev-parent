@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.headsupdev</groupId>
+  <artifactId>headsupdev-parent</artifactId>
+  <version>1</version>
+  <packaging>pom</packaging>
+  <name>Heads Up Development</name>
+  <url>http://headsupdev.org/headsupdev-parent</url>
+
+  <scm>
+    <connection>scm:git:git@github.com:headsupdev/headsupdev-parent.git
+    <developerConnection>scm:git:git@github.com:headsupdev/headsupdev-parent.git</developerConnection>
+    <url>http://headsupdev.org/headsupdev-parent</url>
+  </scm>
+
+  <repositories>
+    <repository>
+      <id>headsupdev-release</id>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <url>dav:http://headsupdev.org/repository/release/</url>
+    </repository>
+    <repository>
+      <id>headsupdev-snapshot</id>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <url>dav:http://headsupdev.org/repository/snapshot/</url>
+    </repository>
+  </repositories>
+
+  <distributionManagement>
+    <repository>
+      <id>headsupdev-release</id>
+      <url>dav:http://headsupdev.org/repository/release/</url>
+    </repository>
+    <snapshotRepository>
+      <id>headsupdev-snapshot</id>
+      <url>dav:http://headsupdev.org/repository/snapshot/</url>
+    </snapshotRepository>
+    <site>
+      <id>headsupdev-site</id>
+      <url>dav:http://headsupdev.org/repository/site/headsupdev-parent</url>
+    </site>
+  </distributionManagement>
+
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-webdav</artifactId>
+        <version>1.0-beta-2</version>
+      </extension>
+    </extensions>
+  </build>
+</project>
