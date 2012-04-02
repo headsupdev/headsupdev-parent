@@ -6,13 +6,23 @@
   <version>2-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Heads Up Development</name>
-  <url>http://headsupdev.org/headsupdev-parent</url>
+  <url>http://headsupdev.org/headsupdev-parent/docs</url>
 
   <scm>
     <connection>scm:git:git://github.com/headsupdev/headsupdev-parent.git</connection>
     <developerConnection>scm:git:git@github.com:headsupdev/headsupdev-parent.git</developerConnection>
-    <url>http://headsupdev.org/headsupdev-parent</url>
+    <url>http://headsupdev.org/headsupdev-parent/files</url>
   </scm>
+
+  <issueManagement>
+    <system>HeadsUp Agile</system>
+    <url>http://headsupdev.org/headsupdev-parent/issues</url>
+  </issueManagement>
+
+  <ciManagement>
+    <system>HeadsUp Agile</system>
+    <url>http://headsupdev.org/headsupdev-parent/builds</url>
+  </ciManagement>
 
   <repositories>
     <repository>
@@ -52,6 +62,30 @@
     </site>
   </distributionManagement>
 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.7</version>
+      </plugin>
+    </plugins>
+  </reporting>
+
+  <contributors>
+    <contributor>
+      <name>Andrew Williams</name>
+      <email>andy@andywilliams.me</email>
+      <url>http://andywilliams.me</url>
+      <organization>Heads Up Development</organization>
+      <organizationUrl>http://headsupdev.com</organizationUrl>
+    </contributor>
+  </contributors>
+
   <build>
     <extensions>
       <extension>
@@ -60,5 +94,17 @@
         <version>1.0-beta-2</version>
       </extension>
     </extensions>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <configuration>
+            <source>1.5</source>
+            <target>1.5</target>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
   </build>
 </project>
