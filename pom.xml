@@ -3,7 +3,7 @@
 
   <groupId>org.headsupdev</groupId>
   <artifactId>headsupdev-parent</artifactId>
-  <version>2</version>
+  <version>3-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Heads Up Development</name>
   <url>http://headsupdev.org/headsupdev-parent/docs</url>
