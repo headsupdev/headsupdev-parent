@@ -45,6 +45,16 @@
       </snapshots>
       <url>http://headsupdev.org/repository/snapshot/</url>
     </repository>
+    <repository>
+      <id>headsupdev-external</id>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <url>dav:http://headsupdev.org/repository/external/</url>
+    </repository>
   </repositories>
 
   <distributionManagement>
