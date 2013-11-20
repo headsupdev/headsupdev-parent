@@ -3,7 +3,7 @@
 
   <groupId>org.headsupdev</groupId>
   <artifactId>headsupdev-parent</artifactId>
-  <version>4-SNAPSHOT</version>
+  <version>4</version>
   <packaging>pom</packaging>
   <name>Heads Up Development</name>
   <url>http://headsupdev.org/headsupdev-parent/docs</url>
@@ -12,6 +12,7 @@
     <connection>scm:git:git://github.com/headsupdev/headsupdev-parent.git</connection>
     <developerConnection>scm:git:git@github.com:headsupdev/headsupdev-parent.git</developerConnection>
     <url>http://headsupdev.org/headsupdev-parent/files</url>
+    <tag>headsupdev-parent-4</tag>
   </scm>
 
   <issueManagement>
